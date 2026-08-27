@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Notes App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>📝 Notes App</h1>
+        <p>Create, edit, search and manage your notes.</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Search -->
+        <div class="search-section">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search notes..."
+            >
+
+            <button id="newNoteButton">
+                + New Note
+            </button>
+        </div>
+
+        <!-- Note Editor -->
+        <section id="editor" class="editor hidden">
+
+            <input
+                type="text"
+                id="titleInput"
+                placeholder="Note title"
+            >
+
+            <textarea
+                id="contentInput"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <div class="editor-buttons">
+
+                <button id="saveButton" class="save-btn">
+                    Save Note
+                </button>
+
+                <button id="cancelButton" class="cancel-btn">
+                    Cancel
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Notes -->
+        <section>
+
+            <h2>Your Notes</h2>
+
+            <div id="notesContainer" class="notes-container">
+                <!-- Notes will be added here using TypeScript -->
+            </div>
+
+            <p id="emptyMessage" class="empty-message">
+                No notes yet. Create your first note!
+            </p>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="./dist/app.js"></script>
+
+</body>
+</html>
