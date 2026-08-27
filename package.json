@@ -1,1 +1,13 @@
-
+{
+  "name": "typescript-notes-app",
+  "version": "1.0.0",
+  "description": "A simple Notes App built with TypeScript, HTML, CSS and LocalStorage.",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}
